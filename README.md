@@ -34,7 +34,7 @@ This is a powerful command-line tool for interacting with the YouTube Data API. 
 Get basic information about a YouTube channel.
 
 ```bash
-./mcp-youtube list --channelid <your-channel-id>
+./youtubectl list --channelid <your-channel-id>
 ```
 
 ### `upload`
@@ -42,7 +42,7 @@ Get basic information about a YouTube channel.
 Upload a video to your YouTube channel.
 
 ```bash
-./mcp-youtube upload --filename /path/to/your/video.mp4 --title "My Awesome Video" --description "This is a test video"
+./youtubectl upload --filename /path/to/your/video.mp4 --title "My Awesome Video" --description "This is a test video"
 ```
 
 ### `list-videos`
@@ -52,13 +52,13 @@ List the videos on a channel.
 **Basic View:**
 
 ```bash
-./mcp-youtube list-videos --channelid <your-channel-id>
+./youtubectl list-videos --channelid <your-channel-id>
 ```
 
 **Detailed View:**
 
 ```bash
-./mcp-youtube list-videos --channelid <your-channel-id> --detailed
+./youtubectl list-videos --channelid <your-channel-id> --detailed
 ```
 
 **Pagination:**
@@ -70,5 +70,9 @@ The `list-videos` command supports pagination. You can use the `--limit` flag to
 Get the channel ID for a given video ID.
 
 ```bash
-./mcp-youtube channel-info --videoid <video-id>
+./youtubectl channel-info --videoid <video-id>
 ```
+
+# Disclaimer
+
+This is not an officially supported Google product.

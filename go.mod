@@ -1,4 +1,4 @@
-module github.com/ghchinoy/mcp-youtube
+module github.com/ghchinoy/youtubectl
 
 go 1.24.3
 
